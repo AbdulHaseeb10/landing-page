@@ -118,8 +118,9 @@
     flex-direction: column;
   }
   .signupForm {
-    margin-left: 10px;
     width: 350px;
+    margin: auto;
+    margin-bottom:50px;  
   }
   .features ul li span {
     display: block;
