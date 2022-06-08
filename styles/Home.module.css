@@ -1,0 +1,135 @@
+/* Navbar */
+.navbar {
+  padding: 10px 10px;
+  background-color: rgb(57, 55, 55);
+  color: #fff;
+}
+.navItem {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding-right: 70px;
+}
+.navItem li {
+  padding-left: 50px;
+  font-weight: bold;
+}
+
+/* Tagline */
+.tagLine {
+  background-image: url("../public/taglineImg.avif");
+  background-size: cover;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tagLine h1 {
+  font-size: 50px;
+}
+
+/* Signup form */
+.signupForm {
+  height: 500px;
+  width: 450px;
+  background-image: linear-gradient(grey, rgb(203, 203, 203));
+  background-attachment: fixed;
+  margin: 30px 100px;
+  padding: 20px;
+}
+
+.signupForm form label {
+  font-size: large;
+}
+
+/* Main Section */
+
+.mainSection {
+  display: flex;
+  background-color: rgb(216, 216, 216);
+}
+.features {
+  margin: 30px 30px;
+  padding-left: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.featureHeading {
+  font-weight: bold;
+  line-height: 50px;
+}
+.features ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.features ul li {
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.features ul li span {
+  font-weight: lighter;
+  color: rgb(76, 74, 74);
+}
+
+.footerSection {
+  background-color: rgb(57, 55, 55);
+  color: rgb(202, 201, 201);
+  height: 70px;
+  text-align: center;
+  padding-top: 20px;
+}
+@media (max-width: 991px) {
+  .navbar h4{
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .navItem{
+    justify-content: center;
+  }
+  .mainSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .signupForm {
+    width: 350px;
+  }
+}
+
+@media (max-width: 667px) {
+  .navbar h4 {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .navbar li {
+    font-size: small;
+  }
+  .tagLine h1 {
+    font-size: xx-large;
+    text-align: center;
+  }
+  .mainSection {
+    flex-direction: column;
+  }
+  .signupForm {
+    margin-left: 10px;
+    width: 350px;
+  }
+  .features ul li span {
+    display: block;
+    line-height: normal;
+  }
+  .featureTagLine {
+    font-size: large;
+    text-align: center;
+  }
+  .footerSection {
+    font-size: small;
+  }
+}
